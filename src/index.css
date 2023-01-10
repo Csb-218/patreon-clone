@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.dropdownhide{
+    @apply w-auto
+}
+
+.dropdown{
+    @apply w-auto h-56 
+}
+
+.dropdown-content{
+    @apply flex flex-col my-3 bg-white drop-shadow-lg text-center w-64 py-3 absolute rounded-sm
+}
+
+.nav-menu{
+    @apply w-screen h-screen  bg-white sticky p-4 bottom-0 top-0 lg:hidden z-50 
+}
+
+.nav-menu-button{
+    @apply my-2  block lg:hidden
+}
+
+.nav-dropdown{
+    @apply bg-white w-full  border-b z-50 
+}
+
+.nav-dropdown-content{
+    @apply flex flex-col gap-4 my-4 
+}
+
+.slide{
+    @apply  h-20 sm:h-32  flex gap-3 animate-slide-infinite 
+}
+.slide-pause{
+    @apply  h-20 sm:h-20 flex gap-3 animate-slide-pause
+}
+.slider{
+    @apply  h-20 sm:h-32  my-2 flex w-[calc(2_*_2430px)] gap-2
+}
+.image{
+    @apply h-20 sm:h-32 w-full border-0 rounded-md hover:scale-90 transition duration-1000 
+}
+.red-button{
+    @apply bg-red-500 py-2 px-7 border rounded-full text-white
+}
+
+.cat-button{
+    @apply md:hover:bg-white  md:hover:text-red-500 bg-stone-100 hover:bg-red-500 hover:text-white rounded-full px-7 py-2
+}
+
